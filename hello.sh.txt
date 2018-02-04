@@ -1,0 +1,11 @@
+#! /bin/bash
+# author : mohammad saeid tavana 
+# date : 04/02/2018
+
+if [  -z $1 ]
+then 
+ 	 echo " the input can not be empty "
+elif [  -n $1  ]
+then 
+	echo " welcome to first shell script " 
+fi  

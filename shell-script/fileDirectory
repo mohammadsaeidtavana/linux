@@ -1,0 +1,28 @@
+#!/bin/bash
+#programmer mohammad saeid tavana 
+#this script is like the command and it can be access from any where
+#this script is creat file or directory
+if [ $1 ==  f ]
+then
+	if  [ -f ./$2 ]
+	then
+		echo file with name $2 exist
+		exit 0
+	else
+		touch ./$2
+		echo file has been created
+
+	fi
+elif [ $1 == d ]
+then
+	if [ -d ./$2 ]
+	then
+		echo directory with name : $2 exist
+	elif [ ! -d ./$2 ]
+	then
+		mkdir $2
+		echo directory has been created
+	fi
+	
+fi
+
